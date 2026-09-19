@@ -1,0 +1,19 @@
+const students = [
+    { name: "сашка", grade: 5 },
+    { name: "симпл", grade: 3 },
+    { name: "голавач", grade: 4 },
+    { name: "не самый умный чувак", grade: 2 },
+    { name: "лена", grade: 5 }
+];
+console.log("люди с оценкой выше 3:");
+for (let student of students) {
+    if (student.grade > 3) {
+        console.log(`${student.name}: ${student.grade}`);
+    }
+}
+let sum = 0;
+for (let student of students) {
+    sum += student.grade;
+}
+const average = sum / students.length;
+console.log("средняя оценка:", average);
